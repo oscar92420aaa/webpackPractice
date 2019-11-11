@@ -1,3 +1,4 @@
 export function helloworld() {
-    return 'Hello webpack';
+    const content = 'Hello webpack';
+    return content;
 }
