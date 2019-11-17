@@ -5,6 +5,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const glob = require('glob');
+const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
 
 const setMPA = () => {
     const entry = {};
@@ -24,7 +25,7 @@ const setMPA = () => {
                 // inlineSource: '.css$',
                 template: path.join(__dirname, `src/${pageName}/index.html`),
                 filename: `${pageName}.html`,
-                chunks: [pageName],
+                chunks: ['commons', pageName],
                 inject: true,
                 minify: {
                     html5: true,
@@ -52,7 +53,7 @@ module.exports = {
         path: path.join(__dirname, 'dist'),
         filename: '[name]_[chunkhash:8].js'
     },
-    mode: 'production',
+    mode: 'none',
     module: {
         rules: [
             {
@@ -130,5 +131,43 @@ module.exports = {
             assetNameRegExp: /\.css$/g,
             cssProcessor: require('cssnano')
         }),
-    ].concat(htmlWebpackPlugins)
+        // new HtmlWebpackExternalsPlugin({
+        //     externals: [
+        //       {
+        //         module: 'react',
+        //         entry: 'https://11.url.cn/now/lib/16.2.0/react.min.js',
+        //         global: 'React',
+        //       },
+        //       {
+        //         module: 'react-dom',
+        //         entry: 'https://11.url.cn/now/lib/16.2.0/react-dom.min.js',
+        //         global: 'ReactDOM',
+        //       },
+        //     ]
+        // }),        
+    ].concat(htmlWebpackPlugins),
+    devtool: 'source-map',
+    // optimization: { // 分离公共基本包
+    //     splitChunks: {
+    //         cacheGroups: {
+    //             commons: {
+    //                 test: /(react | react-dom)/,
+    //                 name: 'vendors', 
+    //                 chunks: 'all',
+    //             }
+    //         }
+    //     }
+    // } 
+    optimization: { // 分离公共文件
+        splitChunks: {
+            minSize: 0, // 文件大小大于0
+            cacheGroups: {
+                commons: {
+                    name: 'commons',
+                    chunks: 'all',
+                    minChunks: 2 // 文件引用次数是两次
+                }
+            }
+        }
+    }       
 };
