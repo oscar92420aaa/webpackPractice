@@ -22,6 +22,7 @@
   "homepage": "https://github.com/oscar92420aaa/webpackPractice#readme",
   "devDependencies": {
     "@babel/core": "^7.7.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
     "autoprefixer": "^9.7.1",

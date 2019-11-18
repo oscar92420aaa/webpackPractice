@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./common/index.js"],"names":["common"],"mappings":";;;;;;AAAA;AAAA;AAAO,SAASA,MAAT,GAAkB;AACrB,SAAO,eAAP;AACH,C","file":"commons_11260bb1.js","sourcesContent":["export function common() {\n    return 'common module';\n}"],"sourceRoot":""}
