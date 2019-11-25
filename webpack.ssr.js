@@ -1,3 +1,4 @@
+// ssr-webpack配置
 const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -6,7 +7,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const glob = require('glob');
 const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
-const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
 const setMPA = () => {
     const entry = {};
@@ -148,18 +148,7 @@ module.exports = {
         //         global: 'ReactDOM',
         //       },
         //     ]
-        // }), 
-        new FriendlyErrorsWebpackPlugin(), // 构建日志优化提示插件
-        function() { // 主动捕获并处理构建错误-webpack4
-            this.hooks.done.tap('done', (stats) => {
-                if (stats.compilation.errors && stats.compilation.errors.length 
-                    && process.argv.indexOf('--watch') == -1)
-                {
-                    console.log('build error');
-                    process.exit(1);
-                }
-            })
-        }          
+        // }),        
     ].concat(htmlWebpackPlugins),
     devtool: 'source-map',
     // optimization: { // 分离公共基本包
@@ -184,6 +173,5 @@ module.exports = {
                 }
             }
         }
-    },
-    stats: 'errors-only' // webpack构建日志优化       
+    }       
 };
