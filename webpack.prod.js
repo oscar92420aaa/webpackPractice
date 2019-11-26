@@ -7,6 +7,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const glob = require('glob');
 const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
+const SpeedMeasureWebpackPlugin = require('speed-measure-webpack-plugin');
+
+const smp = new SpeedMeasureWebpackPlugin();
 
 const setMPA = () => {
     const entry = {};
@@ -48,7 +51,7 @@ const setMPA = () => {
 
 const { entry, htmlWebpackPlugins } = setMPA();
 
-module.exports = {
+module.exports = smp.wrap({
     entry: entry,
     output: {
         path: path.join(__dirname, 'dist'),
@@ -186,4 +189,4 @@ module.exports = {
         }
     },
     stats: 'errors-only' // webpack构建日志优化       
-};
+});
