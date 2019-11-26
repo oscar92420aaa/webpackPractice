@@ -1,0 +1,441 @@
+ WARNING  Compiled with 6 warnings9:31:43 PM
+
+Module Warning (from ./node_modules/eslint-loader/dist/cjs.js):
+No ESLint configuration found in /Users/liuyang/Desktop/myProject/webpackPractice/common.
+
+Module Warning (from ./node_modules/eslint-loader/dist/cjs.js):
+No ESLint configuration found in /Users/liuyang/Desktop/myProject/webpackPractice/src/index.
+
+Module Warning (from ./node_modules/eslint-loader/dist/cjs.js):
+No ESLint configuration found in /Users/liuyang/Desktop/myProject/webpackPractice/src/index.
+
+Module Warning (from ./node_modules/eslint-loader/dist/cjs.js):
+No ESLint configuration found in /Users/liuyang/Desktop/myProject/webpackPractice/src/search.
+
+Module Warning (from ./node_modules/eslint-loader/dist/cjs.js):
+No ESLint configuration found in /Users/liuyang/Desktop/myProject/webpackPractice/src/search.
+
+Module Warning (from ./node_modules/eslint-loader/dist/cjs.js):
+No ESLint configuration found in /Users/liuyang/Desktop/myProject/webpackPractice/src/search.
+
+You may use special comments to disable some warnings.
+Use // eslint-disable-next-line to ignore the next line.
+Use /* eslint-disable */ to ignore all warnings in a file.
+{
+  "errors": [],
+  "warnings": [
+    "./common/index.js\nModule Warning (from ./node_modules/eslint-loader/dist/cjs.js):\nNo ESLint configuration found in /Users/liuyang/Desktop/myProject/webpackPractice/common.\n @ ./src/index/index.js 2:0-44",
+    "./src/index/index.js\nModule Warning (from ./node_modules/eslint-loader/dist/cjs.js):\nNo ESLint configuration found in /Users/liuyang/Desktop/myProject/webpackPractice/src/index.",
+    "./src/index/helloworld.js\nModule Warning (from ./node_modules/eslint-loader/dist/cjs.js):\nNo ESLint configuration found in /Users/liuyang/Desktop/myProject/webpackPractice/src/index.\n @ ./src/index/index.js 1:0-42 3:15-25",
+    "./src/search/index.js\nModule Warning (from ./node_modules/eslint-loader/dist/cjs.js):\nNo ESLint configuration found in /Users/liuyang/Desktop/myProject/webpackPractice/src/search.",
+    "./src/search/text.js\nModule Warning (from ./node_modules/eslint-loader/dist/cjs.js):\nNo ESLint configuration found in /Users/liuyang/Desktop/myProject/webpackPractice/src/search.\n @ ./src/search/index.js 51:6-25",
+    "./src/search/tree-shaking.js\nModule Warning (from ./node_modules/eslint-loader/dist/cjs.js):\nNo ESLint configuration found in /Users/liuyang/Desktop/myProject/webpackPractice/src/search.\n @ ./src/search/index.js 26:0-35"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/react/index.js",
+      "name": "./node_modules/react/index.js",
+      "index": 4,
+      "index2": 5,
+      "size": 189,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/src/search/index.js",
+      "issuerId": null,
+      "issuerName": "./src/search/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/src/search/index.js",
+          "name": "./src/search/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 1,
+      "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/common/index.js",
+      "name": "./common/index.js",
+      "index": 2,
+      "index2": 1,
+      "size": 54,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/src/index/index.js",
+      "issuerId": null,
+      "issuerName": "./src/index/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/src/index/index.js",
+          "name": "./src/index/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 1
+    },
+    {
+      "id": 2,
+      "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/object-assign/index.js",
+      "name": "./node_modules/object-assign/index.js",
+      "index": 6,
+      "index2": 3,
+      "size": 2226,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/react/cjs/react.production.min.js",
+      "issuerId": 5,
+      "issuerName": "./node_modules/react/cjs/react.production.min.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/src/search/index.js",
+          "name": "./src/search/index.js"
+        },
+        {
+          "id": 0,
+          "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/react/index.js",
+          "name": "./node_modules/react/index.js"
+        },
+        {
+          "id": 5,
+          "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/react/cjs/react.production.min.js",
+          "name": "./node_modules/react/cjs/react.production.min.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 3,
+      "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/react-dom/index.js",
+      "name": "./node_modules/react-dom/index.js",
+      "index": 7,
+      "index2": 9,
+      "size": 1352,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/src/search/index.js",
+      "issuerId": null,
+      "issuerName": "./src/search/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/src/search/index.js",
+          "name": "./src/search/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 4,
+      "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/file-loader/dist/cjs.js??ref--8-0!/Users/liuyang/Desktop/myProject/webpackPractice/src/search/images/lvxing.jpeg",
+      "name": "./src/search/images/lvxing.jpeg",
+      "index": 13,
+      "index2": 12,
+      "size": 89,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/src/search/index.js",
+      "issuerId": null,
+      "issuerName": "./src/search/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/src/search/index.js",
+          "name": "./src/search/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 5,
+      "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/react/cjs/react.production.min.js",
+      "name": "./node_modules/react/cjs/react.production.min.js",
+      "index": 5,
+      "index2": 4,
+      "size": 9117,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/react/index.js",
+      "issuerId": 0,
+      "issuerName": "./node_modules/react/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/src/search/index.js",
+          "name": "./src/search/index.js"
+        },
+        {
+          "id": 0,
+          "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/react/index.js",
+          "name": "./node_modules/react/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 6,
+      "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/react-dom/cjs/react-dom.production.min.js",
+      "name": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+      "index": 8,
+      "index2": 8,
+      "size": 175204,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/react-dom/index.js",
+      "issuerId": 3,
+      "issuerName": "./node_modules/react-dom/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/src/search/index.js",
+          "name": "./src/search/index.js"
+        },
+        {
+          "id": 3,
+          "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/react-dom/index.js",
+          "name": "./node_modules/react-dom/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 7,
+      "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/scheduler/index.js",
+      "name": "./node_modules/scheduler/index.js",
+      "index": 9,
+      "index2": 7,
+      "size": 197,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/react-dom/cjs/react-dom.production.min.js",
+      "issuerId": 6,
+      "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/src/search/index.js",
+          "name": "./src/search/index.js"
+        },
+        {
+          "id": 3,
+          "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/react-dom/index.js",
+          "name": "./node_modules/react-dom/index.js"
+        },
+        {
+          "id": 6,
+          "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/react-dom/cjs/react-dom.production.min.js",
+          "name": "./node_modules/react-dom/cjs/react-dom.production.min.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 8,
+      "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/scheduler/cjs/scheduler.production.min.js",
+      "name": "./node_modules/scheduler/cjs/scheduler.production.min.js",
+      "index": 10,
+      "index2": 6,
+      "size": 7176,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/scheduler/index.js",
+      "issuerId": 7,
+      "issuerName": "./node_modules/scheduler/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/src/search/index.js",
+          "name": "./src/search/index.js"
+        },
+        {
+          "id": 3,
+          "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/react-dom/index.js",
+          "name": "./node_modules/react-dom/index.js"
+        },
+        {
+          "id": 6,
+          "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/react-dom/cjs/react-dom.production.min.js",
+          "name": "./node_modules/react-dom/cjs/react-dom.production.min.js"
+        },
+        {
+          "id": 7,
+          "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/scheduler/index.js",
+          "name": "./node_modules/scheduler/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 9,
+      "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/css-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/less-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/postcss-loader/src/index.js??ref--6-3!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/px2rem-loader/index.js??ref--6-4!/Users/liuyang/Desktop/myProject/webpackPractice/src/search/search.less",
+      "name": "./src/search/search.less",
+      "index": 11,
+      "index2": 11,
+      "size": 39,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/src/search/index.js",
+      "issuerId": null,
+      "issuerName": "./src/search/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/src/search/index.js",
+          "name": "./src/search/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 10,
+      "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/src/index/index.js df458f6a17d451d7103cbd6cc1c53926",
+      "name": "./src/index/index.js + 1 modules",
+      "index": 0,
+      "index2": 2,
+      "size": 205,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 2
+    },
+    {
+      "id": 11,
+      "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/src/search/index.js dc7343a53fbfdf92daadde7aea60f4c9",
+      "name": "./src/search/index.js + 1 modules",
+      "index": 3,
+      "index2": 14,
+      "size": 3687,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 2
+    },
+    {
+      "id": 12,
+      "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/src/search/text.js",
+      "name": "./src/search/text.js",
+      "index": 15,
+      "index2": 15,
+      "size": 126,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        3
+      ],
+      "issuer": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/src/search/index.js",
+      "issuerId": null,
+      "issuerName": "./src/search/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/babel-loader/lib/index.js!/Users/liuyang/Desktop/myProject/webpackPractice/node_modules/eslint-loader/dist/cjs.js!/Users/liuyang/Desktop/myProject/webpackPractice/src/search/index.js",
+          "name": "./src/search/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 1
+    }
+  ],
+  "filteredModules": 1,
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  }
+}
