@@ -9,6 +9,7 @@ const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const SpeedMeasureWebpackPlugin = require('speed-measure-webpack-plugin');
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const TerserWebpackPlugin = require('terser-webpack-plugin');
 
 const smp = new SpeedMeasureWebpackPlugin();
 
@@ -194,7 +195,13 @@ module.exports = smp.wrap({
                     minChunks: 2 // 文件引用次数是两次
                 }
             }
-        }
+        },
+        minimizer: [
+            new TerserWebpackPlugin({ // 加快构建速度-多线程多实例压缩代码
+                parallel: true,
+                cache: true
+            })
+        ]        
     },
     stats: 'errors-only' // webpack构建日志优化       
 });
