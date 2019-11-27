@@ -8,7 +8,7 @@ const glob = require('glob');
 const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const SpeedMeasureWebpackPlugin = require('speed-measure-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const smp = new SpeedMeasureWebpackPlugin();
 
@@ -64,6 +64,12 @@ module.exports = smp.wrap({
             {
                 test: /.js$/,
                 use: [
+                    {
+                        loader: 'thread-loader', // 多进程-构建速度优化
+                        options: {
+                            workers: 3
+                        }
+                    },
                     'babel-loader',
                     'eslint-loader'
                 ]
@@ -164,7 +170,7 @@ module.exports = smp.wrap({
                 }
             })
         },
-        new BundleAnalyzerPlugin()          
+        // new BundleAnalyzerPlugin() // 打包体积可视化插件        
     ].concat(htmlWebpackPlugins),
     devtool: 'source-map',
     // optimization: { // 分离公共基本包
