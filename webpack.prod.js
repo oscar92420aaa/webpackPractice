@@ -8,6 +8,7 @@ const glob = require('glob');
 const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const SpeedMeasureWebpackPlugin = require('speed-measure-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const smp = new SpeedMeasureWebpackPlugin();
 
@@ -162,7 +163,8 @@ module.exports = smp.wrap({
                     process.exit(1);
                 }
             })
-        }          
+        },
+        new BundleAnalyzerPlugin()          
     ].concat(htmlWebpackPlugins),
     devtool: 'source-map',
     // optimization: { // 分离公共基本包
