@@ -61,6 +61,14 @@ module.exports = smp.wrap({
         filename: '[name]_[chunkhash:8].js'
     },
     mode: 'production',
+    resolve: { // 提高构建速度
+        alias: {
+            'react': path.resolve(__dirname, './node_modules/react/umd/react.production.min.js'),
+            'react-dom': path.resolve(__dirname, './node_modules/react-dom/umd/react-dom.production.min.js'),            
+        },
+        extensions: ['.js'],
+        mainFields: ['main'] // 查找package.json里面的main字段  
+    },
     module: {
         rules: [
             {
