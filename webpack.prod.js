@@ -146,7 +146,7 @@ module.exports = smp.wrap({
             assetNameRegExp: /\.css$/g,
             cssProcessor: require('cssnano')
         }),
-        // new HtmlWebpackExternalsPlugin({
+        // new HtmlWebpackExternalsPlugin({ // 分离基础包-引入cdn-构建速度优化
         //     externals: [
         //       {
         //         module: 'react',
@@ -171,7 +171,10 @@ module.exports = smp.wrap({
                 }
             })
         },
-        // new BundleAnalyzerPlugin() // 打包体积可视化插件        
+        // new BundleAnalyzerPlugin() // 打包体积可视化插件 
+        new webpack.DllReferencePlugin({ // webpack进一步分包-预编译资源模块-提高构建速度
+            manifest: require('./build/library/library.json')
+        }),               
     ].concat(htmlWebpackPlugins),
     devtool: 'source-map',
     // optimization: { // 分离公共基本包
