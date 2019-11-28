@@ -10,6 +10,7 @@ const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const SpeedMeasureWebpackPlugin = require('speed-measure-webpack-plugin');
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const TerserWebpackPlugin = require('terser-webpack-plugin');
+const HardSourceWebpackPlugin = require('hard-source-webpack-plugin'); // 缓存插件-提高二次构建速度
 
 const smp = new SpeedMeasureWebpackPlugin();
 
@@ -174,7 +175,8 @@ module.exports = smp.wrap({
         // new BundleAnalyzerPlugin() // 打包体积可视化插件 
         new webpack.DllReferencePlugin({ // webpack进一步分包-预编译资源模块-提高构建速度
             manifest: require('./build/library/library.json')
-        }),               
+        }), 
+        new HardSourceWebpackPlugin()  // 缓存插件-提高二次构建速度            
     ].concat(htmlWebpackPlugins),
     devtool: 'source-map',
     // optimization: { // 分离公共基本包
