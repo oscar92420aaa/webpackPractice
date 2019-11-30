@@ -4,6 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './search.less';
 import logo from './images/lvxing.jpeg';
+import lvxing2 from './images/lvxing2.jpeg';
 import { common } from '../../common/index';
 import { a } from './tree-shaking';
 
@@ -32,6 +33,8 @@ class Search extends React.Component {
             }
             {/* { addResult } */}
             搜索文字的内容<img src={ logo } onClick={ this.loadComponent.bind(this) } />
+            <span>aaa</span>
+            <img src={lvxing2} />
         </div>;
     }
 }
